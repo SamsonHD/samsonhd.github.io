@@ -6,12 +6,17 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+  
 
+    <script src="./js/mapdata.js"></script>
+    <script src="./js/galleryopt.js"></script>
     
     <!-- Include Unite Gallery core files -->
     <script src='./unitegallery/js/unitegallery.min.js' type='text/javascript'  ></script>
@@ -21,10 +26,10 @@
     <script type='text/javascript' src='./unitegallery/themes/default/ug-theme-default.js'></script> 
     <link rel='stylesheet' href='./unitegallery/themes/default/ug-theme-default.css' type='text/css' /> 
     <script src='./unitegallery/themes/tiles/ug-theme-tiles.js' type='text/javascript'></script>
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYN_1lHKR48T6ZmbSWP-CzBL9Oi_gIgG4&callback=initMap"
+                async defer></script>
 
-	<script src="./js/bootstrap.min.js"></script>
     <title>Home</title>
 
     
@@ -59,6 +64,12 @@
   </div>
 </nav>
     
+    
+    
+    <!-- Section 1 -->
+    
+    
+    
     <div id="stage">
         <div id="stage-caption">
         <h1 class="display-3" id="texthead">Hello</h1>
@@ -72,7 +83,8 @@
     </div>
     
     
-    
+    <!-- Section 2 -->
+
     
 <div id="stage-2"> </div>
     <div id="stage-3">
@@ -88,6 +100,7 @@ http://shutterstock.com/g/alexkurchev"><img src="icons/camera.svg" id="icon"></a
     </div>
         </div>
 
+<!-- Section 3 -->
 
 
 <div id="gallery">
@@ -152,12 +165,13 @@ http://shutterstock.com/g/alexkurchev"><img src="icons/camera.svg" id="icon"></a
             <img alt="Image 2 Title" src="thumbs/img-19.jpg"
 				data-image="images/img-19.jpg"
 				data-description="Image 2 Description">
-			
-
 		 </div>
-  
-    <div id="section-map">
-        
+    
+    
+    
+  <!-- Section 4 -->
+
+        <div id="section-map">
 <div class="container-fluid" align="center">
 <div class="row align-items-center" id="iconrowtwo">
     <div class="col-4"><img src="icons/map.svg" class="img-responsive" id="mapicon">           </div>
@@ -168,243 +182,19 @@ http://shutterstock.com/g/alexkurchev"><img src="icons/camera.svg" id="icon"></a
         </div>
 </div>
 </div>
-   
-           
+
+  <!-- Section 5 -->
+
     
 <div id="map"></div>
-  
-                 <script>
+    
+    
 
-      function initMap() {
-        var myLatLng1 = {lat: 50.453314, lng: 30.542264};
-        var myLatLng2 = {lat: 47.838231, lng: 35.133075};        
-        var myLatLng3 = {lat: 47.572107, lng: 34.392514};
-        var myLatLng4 = {lat: 47.909953, lng: 33.391155};
-        var myLatLng5 = {lat: 46.975044, lng: 31.994758};
-        var myLatLng6 = {lat: 46.482206, lng: 30.719834};
-        var myLatLng7 = {lat: 44.956318, lng: 34.111364};
-        var myLatLng8 = {lat: 44.495713, lng: 34.166310};
-        var myLatLng9 = {lat: 45.191471, lng: 33.368752};
-        var myLatLng10 = {lat: 49.839311, lng: 24.025967};
-        var myLatLng11 = {lat: 48.923484, lng: 24.710261};
-        var myLatLng12 = {lat: 48.449323, lng: 22.708767};
-        var myLatLng13 = {lat: 48.669137, lng: 23.331805};
-        var myLatLng14 = {lat: 49.394578, lng: 22.467752};
-        var myLatLng15 = {lat: 49.554136, lng: 22.206109};        
-        var myLatLng16 = {lat: 49.695853, lng: 22.020196};
-        var myLatLng17 = {lat: 50.068223, lng: 19.937022};
-        var myLatLng18 = {lat: 52.229689, lng: 21.014568};
-        var myLatLng19 = {lat: 48.935702, lng: 21.919824};
-        var myLatLng20 = {lat: 49.268407, lng: 21.904673};
-        var myLatLng21 = {lat: 52.834299, lng: -118.044799};
-        var myLatLng22 = {lat: 53.034020, lng: -119.231335};
-        var myLatLng23 = {lat: 51.181845, lng: -115.574758};
-        var myLatLng24 = {lat: 53.404034, lng: -117.570235};
-        var myLatLng25 = {lat: 53.536814, lng: -113.501671};
-        var myLatLng26 = {lat: 52.269268, lng: -113.816340};
-        var myLatLng27 = {lat: 51.049373, lng: -114.072299};
-        var myLatLng = {lat: 41.354127, lng: -42.620151};
-          
-          
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 3,
-          center: myLatLng,
-          mapTypeId: 'satellite'
-        });
 
-        var marker = new google.maps.Marker({
-          position: myLatLng1,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng2,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng3,
-          map: map,
-          title: 'Hello World!'
-        });
-          
-          
-          var marker = new google.maps.Marker({
-          position: myLatLng4,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng5,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng6,
-          map: map,
-          title: 'Hello World!'
-        });
-          
-          
-          var marker = new google.maps.Marker({
-          position: myLatLng7,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng8,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng9,
-          map: map,
-          title: 'Hello World!'
-        });
-          
-          
-          var marker = new google.maps.Marker({
-          position: myLatLng10,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng11,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng12,
-          map: map,
-          title: 'Hello World!'
-        });
-          
-          var marker = new google.maps.Marker({
-          position: myLatLng13,
-          map: map,
-          title: 'Hello World!'
-        });
-          
-          var marker = new google.maps.Marker({
-          position: myLatLng14,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng15,
-          map: map,
-          title: 'Hello World!'
-        });
-          
-          
-          var marker = new google.maps.Marker({
-          position: myLatLng16,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng17,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng18,
-          map: map,
-          title: 'Hello World!'
-        });
-          
-          
-          var marker = new google.maps.Marker({
-          position: myLatLng19,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng20,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng21,
-          map: map,
-          title: 'Hello World!'
-        });
-          
-          var marker = new google.maps.Marker({
-          position: myLatLng22,
-          map: map,
-          title: 'Hello World!'
-        });
-          
-          var marker = new google.maps.Marker({
-          position: myLatLng23,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng24,
-          map: map,
-          title: 'Hello World!'
-        });
-          
-          var marker = new google.maps.Marker({
-          position: myLatLng25,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng26,
-          map: map,
-          title: 'Hello World!'
-        });
-        
-          var marker = new google.maps.Marker({
-          position: myLatLng27,
-          map: map,
-          title: 'Hello World!'
-        });
-          
-          
-
-      }
-    </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYN_1lHKR48T6ZmbSWP-CzBL9Oi_gIgG4&callback=initMap"
-                async defer></script>
 
     
     
 
-    
-                <script type="text/javascript">
 
-                jQuery(document).ready(function(){
-
-                jQuery("#gallery").unitegallery({
-                gallery_theme: "tiles",
-                tiles_type: "justified",
-                gallery_width: "100%",
-                tiles_space_between_cols: 1,
-                tile_border_width: 0,
-                gallery_background_color: "#292b2c",
-                tiles_nested_optimal_tile_width: 263
-                });
-                });
-				
-				</script>
     </body>
 </html>
