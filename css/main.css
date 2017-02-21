@@ -83,24 +83,19 @@ img {
 #section-map {
     background-color: #292b2c;
 }
-#route {
-    float: right;
-    margin-top: 10px;
-
-    width: 12%;
-    margin-right: 100px;
-}
 #mapicon {
-
-    width: 13%;
-    margin-left: 100px;
+    width: 25%;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-#places {
-    text-align: center;
-    z-index: 1;
-    color: white;
+#route {
+    width: 25%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
-    
+#places {
+    color: white;
 }
 #map {
     height: 75%;
