@@ -172,15 +172,111 @@
     
 <div id="map"></div>
   
-                <script>
-                var map;
-                function initMap() {
-                map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: -34.397, lng: 150.644},
-                zoom: 8
-                });
-                }
-                </script>
+                 <script>
+
+      function initMap() {
+        var myLatLng1 = {lat: 50.453314, lng: 30.542264};
+        var myLatLng2 = {lat: 47.838231, lng: 35.133075};        
+        var myLatLng3 = {lat: 47.572107, lng: 34.392514};
+        var myLatLng4 = {lat: 47.909953, lng: 33.391155};
+        var myLatLng5 = {lat: 46.975044, lng: 31.994758};
+        var myLatLng6 = {lat: 46.482206, lng: 30.719834};
+        var myLatLng7 = {lat: 44.956318, lng: 34.111364};
+        var myLatLng8 = {lat: 44.495713, lng: 34.166310};
+        var myLatLng9 = {lat: 45.191471, lng: 33.368752};
+        var myLatLng10 = {lat: 49.839311, lng: 24.025967};
+        var myLatLng11 = {lat: 48.923484, lng: 24.710261};
+        var myLatLng12 = {lat: 48.449323, lng: 22.708767};
+        var myLatLng13 = {lat: 48.669137, lng: 23.331805};
+          
+          
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: myLatLng1
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng1,
+          map: map,
+          title: 'Hello World!'
+        });
+        
+          var marker = new google.maps.Marker({
+          position: myLatLng2,
+          map: map,
+          title: 'Hello World!'
+        });
+        
+          var marker = new google.maps.Marker({
+          position: myLatLng3,
+          map: map,
+          title: 'Hello World!'
+        });
+          
+          
+          var marker = new google.maps.Marker({
+          position: myLatLng4,
+          map: map,
+          title: 'Hello World!'
+        });
+        
+          var marker = new google.maps.Marker({
+          position: myLatLng5,
+          map: map,
+          title: 'Hello World!'
+        });
+        
+          var marker = new google.maps.Marker({
+          position: myLatLng6,
+          map: map,
+          title: 'Hello World!'
+        });
+          
+          
+                var marker = new google.maps.Marker({
+          position: myLatLng7,
+          map: map,
+          title: 'Hello World!'
+        });
+        
+          var marker = new google.maps.Marker({
+          position: myLatLng8,
+          map: map,
+          title: 'Hello World!'
+        });
+        
+          var marker = new google.maps.Marker({
+          position: myLatLng9,
+          map: map,
+          title: 'Hello World!'
+        });
+          
+          
+                var marker = new google.maps.Marker({
+          position: myLatLng10,
+          map: map,
+          title: 'Hello World!'
+        });
+        
+          var marker = new google.maps.Marker({
+          position: myLatLng11,
+          map: map,
+          title: 'Hello World!'
+        });
+        
+          var marker = new google.maps.Marker({
+          position: myLatLng12,
+          map: map,
+          title: 'Hello World!'
+        });
+          
+          var marker = new google.maps.Marker({
+          position: myLatLng13,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYN_1lHKR48T6ZmbSWP-CzBL9Oi_gIgG4&callback=initMap"
                 async defer></script>
 
