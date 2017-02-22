@@ -11,9 +11,10 @@
     
     <script src="./js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./js/jquery.aniview.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-  
+      <link rel="stylesheet" type="text/css" href="./css/animate.css">
 
     <script src="./js/mapdata.js"></script>
     <script src="./js/galleryopt.js"></script>
@@ -87,9 +88,9 @@
 
     
 <div id="stage-2"> </div>
-    <div id="stage-3">
+   <div id="stage-3">
 <div class="container-fluid" align="center">
-<div class="row align-items-center" id="iconrow">
+ <div class="aniview" data-av-animation="bounce"><div class="row align-items-center" id="iconrow">
     <div class="col"><a href="https://goo.gl/A70PqD"><img src="icons/backpack.svg" id="icon"></a></div>
 <div class="col"><img src="icons/skateboard.svg" id="icon"></div>
 <div class="col"><img src="icons/guitar.svg" id="icon"></div>
@@ -99,7 +100,7 @@ http://shutterstock.com/g/alexkurchev"><img src="icons/camera.svg" id="icon"></a
      
     </div>
         </div>
-
+</div>
 <!-- Section 3 -->
 
 
@@ -194,7 +195,14 @@ http://shutterstock.com/g/alexkurchev"><img src="icons/camera.svg" id="icon"></a
 
     
     
-
+<script>
+    $('.aniview').AniView();
+    var options = {
+    animateThreshold: 100,
+    scrollPollInterval: 20
+}
+$('.aniview').AniView(options);
+    </script>
 
     </body>
 </html>
