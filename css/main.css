@@ -1,11 +1,13 @@
 
 body {
     height: 100%;
+    max-width: 100;
 }
 body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
+
 h1,h2,h3,h4,h5 {
     color: #333;
 }
@@ -21,6 +23,10 @@ h6 {
     letter-spacing: 0.1rem;
 }
 
+
+
+
+
 img {
     max-width: 100%;
 }
@@ -35,7 +41,7 @@ img {
     margin: 1rem 0 0;
 
 }
-#stage {
+#header {
     background: url('https://cdn-images-1.medium.com/max/2000/1*bwhOOimPdv4423VxAux-pA.jpeg') center center no-repeat;
     background-size: cover;
     color: white;
@@ -57,22 +63,80 @@ img {
     text-transform: uppercase;
     
 }
-
-#stage-2 {
+.post-preview > a {
+  color: #333333;
+}
+.post-preview > a:hover,
+.post-preview > a:focus {
+  text-decoration: none;
+  color: #0085A1;
+}
+.post-preview > a > .post-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.post-preview > a > .post-subtitle {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.post-preview > .post-meta {
+  color: #777777;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+}
+.post-preview > .post-meta > a {
+  text-decoration: none;
+  color: #333333;
+}
+.post-preview > .post-meta > a:hover,
+.post-preview > .post-meta > a:focus {
+  color: #0085A1;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  .post-preview > a > .post-title {
+    font-size: 36px;
+  }
+}
+.section-heading {
+  font-size: 36px;
+  margin-top: 60px;
+  font-weight: 700;
+}
+.caption {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  font-style: italic;
+  margin: 0;
+  display: block;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#section-1 {
     background-color: #292b2c;
     height: 100px;
 }
-#stage-3 {
+#section-2 {
     background-color: #292b2c;
     height: 100%;
 }
 #iconrow {
   margin-bottom: 20px;
-    width: 30rem;
+    width: 20rem;
 }
-
-.avatar {
-    
+#skate {
+    margin-top: 7px;
+}
+@media (max-width: 600px) {
+  #iconrow {
+width: 5rem;
+  }
+}
+.avatar {   
     margin-top: 67px;
     height: 150px;
     width: 150px;
@@ -80,25 +144,38 @@ img {
     border-color: #6a6a6a;
     -webkit-border-radius: 50%;
 }
-#section-map {
-    background-color: #292b2c;
-}
-#mapicon {
-    width: 7rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-#route {
-    width: 7rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
+
+#section-blog {
+    text-align: center;
 }
 
+#section-divider {
+    background-color: #292b2c;
+}
+#section-divider-icons {
+    max-height: 100%;
+    background-color: #292b2c;
+}
+#mapicon,#route,#pencil,#bag  {
+    width: 4rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+  #mapicon,#route,#pencil,#bag {
+width: 3rem;
+  }
+}
 #places {
     color: white;
+
 }
+
 #map {
     height: 75%;
     width: 100%;
     position: absolute;
       }
+#gmap {
+    height: 100%;
+}
