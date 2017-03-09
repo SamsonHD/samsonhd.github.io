@@ -32,7 +32,9 @@
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 3,
           center: myLatLng,
-          mapTypeId: 'satellite'
+          mapTypeId: 'satellite',
+            minZoom: 3,
+            maxZoom: 9
         });
 
         var marker = new google.maps.Marker({
