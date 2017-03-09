@@ -13,6 +13,7 @@ jQuery(document).ready(function($){
         if( mq == 'mobile' ) {
 			var	videoUrl = videoWrapper.data('video'),
 				video = $('<video loop><source src="'+videoUrl+'.webm" type="video/webm" /></video>');
+				video = $('<video loop><source src="'+videoUrl+'.mp4" type="video/mp4" /><source src="'+videoUrl+'.webm" type="video/webm" /></video>');
 			video.appendTo(videoWrapper);
 			video.get(0).play();
 		}

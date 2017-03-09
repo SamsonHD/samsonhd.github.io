@@ -1,104 +1,26 @@
-
 body {
     height: 100%;
     max-width: 100%;
     background-image: url(back.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
-
 h1,h2,h3,h4,h5 {
     color: #333;
 }
-
 #texthead {
     margin-top: 150px;
 }
-
 h6 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
 }
-
 img {
     max-width: 100%;
-}
-
-.blockquote {
-    font-size: 1.6rem;
-    color: #333;
-    border: none;
-    padding: 0;
-}
-.blockquote-footer {
-    margin: 1rem 0 0;
-
-}
-
-}
-#header {
-    background: url('https://cdn-images-1.medium.com/max/2000/1*bwhOOimPdv4423VxAux-pA.jpeg') center center no-repeat;
-    background-size: cover;
-    color: white;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-#stage-caption {
-    font-size: 1.4rem;
-    font-weight: 200;
-    max-width: 60rem;
-    margin: 0 auto;
-    text-align: center;
-}
-#stage-caption h1{
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    
-}
-
-.section-heading {
-  font-size: 36px;
-  margin-top: 60px;
-  font-weight: 700;
-}
-.caption {
-  text-align: center;
-  font-size: 14px;
-  padding: 10px;
-  font-style: italic;
-  margin: 0;
-  display: block;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-#section-1 {
-    background-color: #292b2c;
-    height: 100px;
-}
-#section-2 {
-    background-color: #292b2c;
-    height: 100%;
-}
-#iconrow {
-  margin-bottom: 20px;
-    width: 20rem;
-}
-#skate {
-    margin-top: 7px;
-}
-@media (max-width: 600px) {
-  #iconrow {
-width: 5rem;
-  }
 }
 .avatar {   
     margin-top: 67px;
@@ -111,37 +33,12 @@ width: 5rem;
 #gallery {
     margin-top: 2rem;
 }
-
-
-#section-divider {
-    background-color: rgba(41, 43, 44, 0.69);
-    border-radius: 15px;
-    box-shadow: 10px
-}
-#section-divider-icons {
-    max-height: 100%;
-    background-color: #292b2c;
-}
-#mapicon,#route,#pencil,#bag  {
-    width: 4rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-@media (max-width: 600px) {
-  #mapicon,#route,#pencil,#bag {
-width: 3rem;
-  }
-}
-#places {
-    color: white;
-
-}
 #map {
     margin-top: 20px;
     height: 75%;
     width: 100%;
     position: absolute;
-      }
+}
 #gmap {
     height: 100%;
 }
