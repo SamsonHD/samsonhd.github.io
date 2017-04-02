@@ -1473,8 +1473,10 @@ Portfolio Details
 }
 
 .live-preview .btn-common{
-  margin-top: 21px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 13px 45px;
+    
 }
 
 
