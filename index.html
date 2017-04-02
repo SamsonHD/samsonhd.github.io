@@ -1,162 +1,314 @@
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    
-    <link rel="shortcut icon" type="image/png" href="/favicon.png">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <meta name="author" content="">
+    <title>Home | Triangle</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
-    <script src="./js/mapdata.js"></script>
-    <script src="./js/galleryopt.js"></script>
-    
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
-
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/nav.css"> 
-    <link rel="stylesheet" href="css/header.css"> 
-    
-    <script src="/js/header.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> <!-- Modernizr -->
-    <script src="js/main.js"></script>
-
-    <!-- Unite Gallery Theme Files -->
-    <script src='./unitegallery/js/unitegallery.min.js' type='text/javascript'></script>
-    <link  href='./unitegallery/css/unite-gallery.css' rel='stylesheet' type='text/css'/>
-    <script type='text/javascript' src='./unitegallery/themes/default/ug-theme-default.js'></script> 
-    <link rel='stylesheet' href='./unitegallery/themes/default/ug-theme-default.css' type='text/css' /> 
-    <script src='./unitegallery/themes/tiles/ug-theme-tiles.js' type='text/javascript'></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYN_1lHKR48T6ZmbSWP-CzBL9Oi_gIgG4&callback=initMap"
-                async defer></script>
-
-    <title>A.K.</title>
-
-    
-<!-- Google Analytics -->
- 
-<!-- Google Analytics END -->
-    
-</head>
 <body>
-<main id="cd-main-content">
-	<section id="cd-intro">
-		<header class="cd-header">
-			<div id="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
-            <a class="cd-menu-trigger" href="#main-nav">Menu<span></span></a>
-		</header>
-        <div class="cd-intro-content video">
-        <div class="cd-bg-video-wrapper" data-video="assets/video">
-			<!-- video element will be loaded using jQuery -->
-    </div>
+	<header id="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-vk"></i></a></li>
+
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<h1><img src="images/logo.png"  class="img-responsive" alt="logo"></h1>
+                    </a>
+                    
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Головна</a></li>
+                        <li><a href="aboutus2.html ">Про нас</a></li>       <li><a href="#home-slider">Тури</a></li>  
+                        <li><a href="portfoliothree.html">Галерея</a></li>               
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="home-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+                        <h1>Живи - Люби - Подорожуй!</h1>
+                        <p>Нас зустрічає столиця Угорщини - Будапешт. Оглядова екскурсія: прекрасна Буда і величний Пешт - це «Перлина Дунаю» - Будапешт! Про це Місто ... Незабутнє ... Неповторне ... Чарівне ... Дивовижне ... Він пропонує своїм відвідувачам близьку і знайому європейську культуру, але з особливим угорським ароматом ...</p>
+                        <a href="#" class="btn btn-lg btn-success">SIGN UP</a>
+                        
+                    </div>
+                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
+                    <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
+                    <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
+                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+                </div>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+    <!--/#home-slider-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                          <a href="portfolio-details.html">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="images/home/icon1.jpg" alt="">
+                              </div> </a>
+                        <h2>Говерла</h2>
+                        <p>Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round.</p>
+                        <a href="#" class="btn btn-md btn-success">Join Us</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                           <a href="portfolio-details.html">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                         
+                            <img src="images/home/icon2.jpg" alt=""> 
+                        </div></a>
+                        <h2>Чорнобиль</h2>
+                        <p>Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison.</p>
+                          <a href="#" class="btn btn-md btn-success">Join Us</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                          <a href="portfolio-details.html">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="images/home/icon3.jpg" alt="">
+                              </div> </a>
+                        <h2>Кращі Пляжі Європи</h2>
+                        <p>Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.</p>
+                          <a href="#" class="btn btn-md btn-success">Join Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#services-->
+
+    <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1 class="title">Зроби свою подорож незабутньою з Stud Travel!</h1>
+                        </div>
+                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="tour-button">
+                                <a href="#" class="btn btn-common">TAKE THE TOUR</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#action-->
+
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
+                        <h1 class="title">Наші Мандрівники</h1>
+                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud </p>
+                    </div>
+                    <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
   </div>
- </section> <!-- cd-intro -->
-</main>
+  <div class='row'>
+    <div class='col-md-offset-2 col-md-8'>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" style="width: 100px;height:100px;" src="images/home/client1.png">
+                  <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                </div>
+                <div class="col-sm-9">
+                  <p>Лучшая организация, которая может быть! Удивительно низкие цены для такого насыщенного отдыха, море впечатлений, эмоций, воспоминаний, веселая компания и новые знакомства! Теперь, если путешествия, то Stud Travel!</p>
+                  <small>Вероника Крутчевская</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" style="width: 100px;height:100px;" src="images/home/client2.png" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Если вы все еще думаете путешествовать или нет - однозначно да! Если думаете кто бы вам в этом помог - однозначно STUD TRAVEL!!! Эти ребята знают толк в отдыхе! Поехала с ними не впервые и каждый раз это лучший отдых в моей жизни! За 3 дня отдыха получила впечатлений на год назад и на год вперёд. Ребята, вы лучшие! Спасибо вам за ваш труд и наш незабываемый отдых!</p>
+                  <small>Викуська Блажко</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" style="width: 100px;height:100px;" src="images/home/client3.png" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Ребятушки, если честно, то это больше чем 3 дня путешествий, а скорее разгрузка для души) В ходе нашей поездки, ты не только любуешься на нереально красивые пейзажи, но и находишь тех людей, которые разделяют твою тягу к приключениям и делятся с тобой своим настроением и добротой! Это те люди, которые пройдут с тобой каждый дюйм до вершины и не оставят тебя одного....</p>
+                  <small>Никита Ушаков</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div>                          
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!--/#clients-->
+                   
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+ <img src="images/home/under.png" class="img-responsive inline" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="testimonial bottom">
+                    
+                        <div class="media">
+                            <div class="pull-left">
+                            </div>
+                            <div class="media-body">
+                           
+                            </div>
+                         </div>
+                        <div class="media">
+                            <div class="pull-left">
 
-<div class="cd-shadow-layer"></div>
-    <nav id="main-nav">
-	<ul>
-		<li><a href="#0"><span>Gallery</span></a></li>
-		<li><a href="#0"><span>Skills</span></a></li>
-		<li><a href="#0"><span>Projects</span></a></li>
-		<li><a href="#0"><span>Blog</span></a></li>
-		<li><a href="#0"><span>Map</span></a></li>
-	</ul>
-  <a href="#0" class="cd-close-menu">Close<span></span></a>
-</nav>
-                
-    <!-- Stage 1 --
-    <div class="container">
-    <div id="header">
-    <div id="stage-caption">
-        <img class="avatar" src="https://pp.vk.me/c626527/v626527909/4c835/6cmX-8Oo6IA.jpg" alt="avatar" />
-    </div>
-    </div>
-    
-    </div>
-     -->
+                            </div>
+                            <div class="media-body">
+                            
+                            </div>
+                        </div>   
+                    </div> 
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="contact-info bottom">
+                        <h2>Contacts</h2>
+                        <address>
+                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br> 
+                        Phone: +38 000 000 <br> 
+                        </address>
 
-<!-- Stage 3 -->
-  <div class="container fluid">
-      <div id="gallery">
-            <img alt="Image 1 Title" src="thumbs/img.jpg"
-				data-image="images/img.jpg"
-				data-description="Image 1 Description">
-			<img alt="Image 2 Title" src="thumbs/img-2.jpg"
-				data-image="images/img-2.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-3.jpg"
-				data-image="images/img-3.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-4.jpg"
-				data-image="images/img-4.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 1 Title" src="thumbs/img-5.jpg"
-				data-image="images/img-5.jpg"
-				data-description="Image 1 Description">
-			<img alt="Image 2 Title" src="thumbs/img-6.jpg"
-				data-image="images/img-6.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-7.jpg"
-				data-image="images/img-7.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-8.jpg"
-				data-image="images/img-8.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 1 Title" src="thumbs/img-9.jpg"
-				data-image="images/img-9.jpg"
-				data-description="Image 1 Description">
-			<img alt="Image 2 Title" src="thumbs/img-10.jpg"
-				data-image="images/img-10.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-1.jpg"
-				data-image="images/img-11.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-12.jpg"
-				data-image="images/img-12.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 1 Title" src="thumbs/img-13.jpg"
-				data-image="images/img-13.jpg"
-				data-description="Image 1 Description">
-			<img alt="Image 2 Title" src="thumbs/img-14.jpg"
-				data-image="images/img-14.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-15.jpg"
-				data-image="images/img-15.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-16.jpg"
-				data-image="images/img-16.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-17.jpg"
-				data-image="images/img-17.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-18.jpg"
-				data-image="images/img-18.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-19.jpg"
-				data-image="images/img-19.jpg"
-				data-description="Image 2 Description">
-            <img alt="Image 2 Title" src="thumbs/img-29.jpg"
-				data-image="images/img-29.jpg"
-				data-description="Image 2 Description">
-     
-		 </div>
-    </div>
-        <div id="map"></div>
-    
-    
-        <!-- javaScript -->
+                        <h2>Address</h2>
+                        <address>
+                        Kyiv, Ukraine <br> 
+                        Kreshatik <br> 
+                        Office 20 <br> 
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="contact-form bottom">
+                        <h2>Send a message</h2>
+                        <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" required="required" placeholder="Email Id">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
+                            </div>                        
+                            <div class="form-group">
+                                <input type="submit" name="submit" class="btn btn-submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; StudTravel 2017. All Rights Reserved.</p>
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
 
-    </body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
 </html>
